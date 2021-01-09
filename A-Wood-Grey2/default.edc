@@ -35093,7 +35093,7 @@ target: "region";
                rel2 {
                   to: "base";
                   relative: 1.0 1.0;
-                  offset: -3  -11;
+                  offset: -3  -20;
                }
             }
          }
@@ -35156,10 +35156,10 @@ target: "region";
             description {
                state: "default" 0.0;
                rel1 {
-                  offset: 2 -12;
+                  offset: 2 -18;
                   relative: 0.0 1.0;
                }
-               rel2.offset: -2 -4;
+               rel2.offset: -2 -8;
                color3: 20 20 20 60;
                color: 255 255 255 255;
                text {
@@ -35172,12 +35172,12 @@ target: "region";
             }
             description {
                state: "selected" 0.0;
-	       inherit: "default" 0.0;
+               inherit: "default" 0.0;
                rel1 {
-                  offset: 2 -12;
+                  offset: 2 -18;
                   relative: 0.0 1.0;
                }
-               rel2.offset: -2 -4;
+               rel2.offset: -2 -8;
                color: 250 250 250 255;
                color3: 20 20 20 40;
             }
@@ -35331,35 +35331,35 @@ target: "region";
          program {
             name: "thumb_show2";
             action: STATE_SET "visible" 0.0;
-	    transition: DECELERATE 0.1;
+            transition: DECELERATE 0.1;
             target: "clip";
          }
-	 program {
+         program {
             name: "go_big";
             action: STATE_SET "visible" 0.0;
             target: "over_clip";
             target: "over";
             target: "over2";
             after: "go_big2";
-	 }
+        }
 
-	 program {
+        program {
             name: "go_big2";
             action: STATE_SET "huge" 0.0;
             transition: DECELERATE 0.4;
             target: "over_clip";
             after: "go_big3";
-	 }
+        }
 
-	 program {
+        program {
             name: "go_big3";
             action: STATE_SET "default" 0.0;
             transition: DECELERATE 0.2;
             target: "over_clip";
             target: "over";
             target: "over2";
-	 }
-	 program {
+        }
+        program {
             name: "action_go";
             signal: "e,action,go";
             source: "e";
@@ -35368,7 +35368,7 @@ target: "region";
             target: "go_big2";
             target: "go_big3";
             after: "go_big";
-	 }
+        }
       }
    }
    group {
@@ -35402,7 +35402,7 @@ target: "region";
          }
          part {
             name: "outline";
-	    mouse_events: 0;
+            mouse_events: 0;
             description {
                state: "default" 0.0;
                rel1.to: "bg";
@@ -35555,14 +35555,14 @@ target: "region";
                rel1 {
                   to_x: "clip";
                   to_y: "base";
-                  offset: 5 2;
-		  relative: 1.0 0.0;
+                  offset: 3 -5;
+                  relative: 1.0 0.0;
                }
                rel2 {
                   relative: 0.0 1.0;
                   offset: 4 -1;
                   to_x: "arrow";
-	          to_y: "spacer";
+                  to_y: "spacer";
                }
                text {
                   font: "Sans";

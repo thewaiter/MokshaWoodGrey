@@ -1,2 +1,2 @@
 #!/bin/sh
-edje_cc $@ -id . -fd . default.edc -o A-Wood-Grey2.edj
+edje_cc $@ -id . -fd . default.edc -o MokshaWoodGrey.edj

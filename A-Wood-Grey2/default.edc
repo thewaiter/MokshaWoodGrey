@@ -1129,7 +1129,7 @@ group {
                    * another part */
                   font: "Sans:style=Bold";
                   size: 10;
-                  align: 0.5 0.0;
+                  align: 0.0 0.0;
                   min: 0 1;
                   text_class: "title_bar";
                }

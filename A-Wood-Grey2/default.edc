@@ -105,8 +105,8 @@ color_classes {
    }
    color_class {
       name: "menu_item";
-      color: 0 0 0 255;
-      color3: 0 0 0 0;
+      color: 255 255 255 225;
+      color3: 0 0 0 48;
    }
    color_class {
       name: "menu_item_active";

@@ -873,6 +873,29 @@ group {
             }
          }
          part {
+            name: "spacer_1";
+            type: SPACER;
+            mouse_events: 0;
+            scale: 1;
+            description {
+                state: "default" 0.0;
+                min: 10 10;
+                max: 10 10;
+                rel1 {
+                  relative: 0.0 0.0;
+                  offset: -2 1;
+                  to_x: "bt_close";
+                  to_y: "top";
+               }
+               rel2 {
+                  relative: 0.0 1.0;
+                  offset: -2 -2;
+                  to_x: "bt_close";
+                  to_y: "top";
+               }
+            }
+         }
+         part {
             name: "bt_max";
             /* maximize button shadow */
             mouse_events: 0;
@@ -886,18 +909,41 @@ group {
                rel1 {
                   relative: 0.0 0.0;
                   offset: -2 1;
-                  to_x: "bt_close";
+                  to_x: "spacer_1";
                   /* left of the close button */
                   to_y: "top";
                }
                rel2 {
                   relative: 0.0 1.0;
                   offset: -2 -2;
-                  to_x: "bt_close";
+                  to_x: "spacer_1";
                   /* left of the close button */
                   to_y: "top";
                }
                image.normal: "bd_button_max_shadow.png";
+            }
+         }
+         part {
+            name: "spacer_2";
+            type: SPACER;
+            mouse_events: 0;
+            scale: 1;
+            description {
+               state: "default" 0.0;
+                min: 10 10;
+                max: 10 10;
+                rel1 {
+                  relative: 0.0 0.0;
+                  offset: -2 1;
+                  to_x: "bt_max";
+                  to_y: "top";
+               }
+               rel2 {
+                  relative: 0.0 1.0;
+                  offset: -2 -2;
+                  to_x: "bt_max";
+                  to_y: "top";
+               }
             }
          }
          part {
@@ -914,14 +960,14 @@ group {
                rel1 {
                   relative: 0.0 0.0;
                   offset: -2 1;
-                  to_x: "bt_max";
+                  to_x: "spacer_2";
                   /* left of the maximize button */
                   to_y: "top";
                }
                rel2 {
                   relative: 0.0 1.0;
                   offset: -2 -2;
-                  to_x: "bt_max";
+                  to_x: "spacer_2";
                   /* left of the maximize button */
                   to_y: "top";
                }
@@ -39313,7 +39359,7 @@ target: "region";
 	 }
 	 part {
 	 name: "event";
-  type: SPACER;
+   type: SPACER;
 	 mouse_events: 1;
 	 repeat_events: 1;
 	    description {

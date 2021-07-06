@@ -41091,7 +41091,7 @@ target: "region";
  styles {
  style {
          name: "notification_style";
-         base: "font=Sans font_size=10 align=left color=#000f wrap=word ellipsis=-1";
+         base: "font=Sans font_size=10 align=left color=#dddf wrap=word ellipsis=-1";
          tag:  "br" "\n";
          tag:  "ps" "ps";
          tag:  "b" "+ font=Sans:style=Bold text_class=module_bold";

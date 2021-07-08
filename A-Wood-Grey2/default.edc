@@ -10637,8 +10637,8 @@ CONNMAN_ICON(ethernet)
                set_state_val(PART:"secs1", STATE_REL2, (12.0/14.0), 1.0);
                set_state_val(PART:"secs2", STATE_REL1, (12.0/14.0), 0.0);
                set_state_val(PART:"secs2", STATE_REL2, (14.0/14.0), 1.0);
-               set_state_val(PART:"ampm", STATE_REL1, (0.0/1.0), 0.0);
-               set_state_val(PART:"ampm", STATE_REL2, (0.0/1.0), 1.0);
+               set_state_val(PART:"ampm", STATE_REL1, (14.0/1.0), 0.0);
+               set_state_val(PART:"ampm", STATE_REL2, (14.0/1.0), 1.0);
                set_min_size(14 * 4, 16);
                set_max_size(14 * 32, 128);
             }
@@ -10651,10 +10651,10 @@ CONNMAN_ICON(ethernet)
                set_state_val(PART:"mins1", STATE_REL2, (7.0/11.0), 1.0);
                set_state_val(PART:"mins2", STATE_REL1, (7.0/11.0), 0.0);
                set_state_val(PART:"mins2", STATE_REL2, (9.0/11.0), 1.0);
-               set_state_val(PART:"secs1", STATE_REL1, (0.0/1.0), 0.0);
-               set_state_val(PART:"secs1", STATE_REL2, (0.0/1.0), 1.0);
-               set_state_val(PART:"secs2", STATE_REL1, (0.0/1.0), 0.0);
-               set_state_val(PART:"secs2", STATE_REL2, (0.0/1.0), 1.0);
+               set_state_val(PART:"secs1", STATE_REL1, (11.0/0.0), 0.0);
+               set_state_val(PART:"secs1", STATE_REL2, (11.0/0.0), 1.0);
+               set_state_val(PART:"secs2", STATE_REL1, (11.0/0.0), 0.0);
+               set_state_val(PART:"secs2", STATE_REL2, (11.0/0.0), 1.0);
                set_state_val(PART:"ampm", STATE_REL1, (9.0/11.0), 0.0);
                set_state_val(PART:"ampm", STATE_REL2, (11.0/11.0), 1.0);
                set_min_size(11 * 4, 16);
@@ -10669,12 +10669,12 @@ CONNMAN_ICON(ethernet)
                set_state_val(PART:"mins1", STATE_REL2, (7.0/9.0), 1.0);
                set_state_val(PART:"mins2", STATE_REL1, (7.0/9.0), 0.0);
                set_state_val(PART:"mins2", STATE_REL2, (9.0/9.0), 1.0);
-               set_state_val(PART:"secs1", STATE_REL1, (0.0/1.0), 0.0);
-               set_state_val(PART:"secs1", STATE_REL2, (0.0/1.0), 1.0);
-               set_state_val(PART:"secs2", STATE_REL1, (0.0/1.0), 0.0);
-               set_state_val(PART:"secs2", STATE_REL2, (0.0/1.0), 1.0);
-               set_state_val(PART:"ampm", STATE_REL1, (0.0/1.0), 0.0);
-               set_state_val(PART:"ampm", STATE_REL2, (0.0/1.0), 1.0);
+               set_state_val(PART:"secs1", STATE_REL1, (9.0/1.0), 0.0);
+               set_state_val(PART:"secs1", STATE_REL2, (9.0/1.0), 1.0);
+               set_state_val(PART:"secs2", STATE_REL1, (9.0/1.0), 0.0);
+               set_state_val(PART:"secs2", STATE_REL2, (9.0/1.0), 1.0);
+               set_state_val(PART:"ampm", STATE_REL1, (9.0/1.0), 0.0);
+               set_state_val(PART:"ampm", STATE_REL2, (9.0/1.0), 1.0);
                set_min_size(9 * 4, 16);
                set_max_size(9 * 32, 128);
             }

@@ -11827,8 +11827,8 @@ CONNMAN_ICON(ethernet)
             scale: 1;
             description { state: "default" 0.0;
                align: 0.5 0.5;
-               color: 0 0 0 196;
-               color3: 255 255 255 255;
+               color3: 0 0 0 196;
+               color: 204 204 204 255;
                rel1.offset: 3 3;
                rel2.offset: -3 -3;
                text {

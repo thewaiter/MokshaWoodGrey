@@ -149,8 +149,8 @@ color_classes {
    }
    color_class {
       name: "button_text";
-      color: 224 224 224 255;
-      color3: 0 0 0 64;
+      //~ color: 224 224 224 255;
+      color: 0 0 0 225;
    }
    color_class {
       name: "button_text_disabled";

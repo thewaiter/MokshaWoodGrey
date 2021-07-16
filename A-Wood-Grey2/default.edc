@@ -822,7 +822,7 @@ group {
                   /* the text will not determine minimum horizontal
                    * size but WILL determine minimal vertical size
                    * (thus 0 1 - horiz then vert flags) */
-                  align: 0.5 0.0;
+                  align: 0.0 0.0;
                   /* align text to top-left of the region
                    * given */
                   text_class: "title_bar";
@@ -1239,7 +1239,7 @@ group {
                    * another part */
                   font: "Sans:style=Bold";
                   size: 10;
-                  align: 0.5 0.0;
+                  align: 0.0 0.0;
                   min: 0 1;
                   text_class: "title_bar";
                }

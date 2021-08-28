@@ -41410,7 +41410,7 @@ group { name: "e/modules/notification/logo";
             description {
                state: "default" 0.0;
                align: 0.0 0.0;
-               max: 500 99999;
+               max: 300 99999;
                //~ min: 200 60;    /* **** */
                
                rel1.to_x: "notification.swallow.app_icon";

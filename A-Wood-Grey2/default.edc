@@ -14009,6 +14009,9 @@ CONNMAN_ICON(ethernet)
             image.normal: "systray_expand_vert.png";
             fill.smooth: 1;
          }
+         description { state: "hide" 0.0;
+            visible: 0;
+         }
       }
       part {
             name: "e.size";
@@ -14057,6 +14060,21 @@ CONNMAN_ICON(ethernet)
    }
 
 programs {
+      program {
+         signal: "e,arrow,show,horiz"; source: "e";
+         action: STATE_SET "default" 0.0;
+         target: "expand_butt";
+      }
+      program {
+         signal: "e,arrow,show,vert"; source: "e";
+         action: STATE_SET "vertical" 0.0;
+         target: "expand_butt";
+      }
+      program {
+         signal: "e,arrow,hide"; source: "e";
+         action: STATE_SET "hide" 0.0;
+         target: "expand_butt";
+      }
       program {
          signal: "e,action,orient,horiz"; source: "e";
          action: STATE_SET "default" 0.0;

@@ -13144,7 +13144,7 @@ CONNMAN_ICON(ethernet)
          }
          description { state: "visible" 0.0;
             inherit: "default" 0.0;
-            color: 255 255 255 255;
+            color: 255 255 255 196;
             visible: 1;
          }
       }

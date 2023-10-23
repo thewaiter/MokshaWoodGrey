@@ -11915,10 +11915,6 @@ CONNMAN_ICON(ethernet)
                color: 0 0 0 200;
             }
          }
-         program { name: "date_clicked";
-            signal: "mouse,clicked,1*"; source: "day";
-            action: SIGNAL_EMIT "e,action,date,get" "";
-         }
          part { name: "e.text.label";
             type: TEXT;
             mouse_events: 0;
@@ -13144,7 +13140,7 @@ CONNMAN_ICON(ethernet)
          }
          description { state: "visible" 0.0;
             inherit: "default" 0.0;
-            color: 255 255 255 196;
+            color: 255 255 255 255;
             visible: 1;
          }
       }

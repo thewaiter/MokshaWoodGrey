@@ -8777,7 +8777,7 @@ CONNMAN_ICON(ethernet)
             mouse_events: 0;
             description {
                state: "default" 0.0;
-               min: 210 150;
+               min: 210 210;
                rel1.offset: 4 4;
                rel2 {
                   relative: 0.5 1;
@@ -8926,22 +8926,23 @@ CONNMAN_ICON(ethernet)
                color: 255 255 0 150;
             }
          }
-         part {
-            name: "e.swallow.check";
-            type: SWALLOW;
-            description {
-               state: "default" 0.0;
+         part { name: "e.box"; type: BOX;
+            description { state: "default" 0.0;
                rel1 {
                   relative: 1 1;
-                  offset: 5 4;
-                  to_x: "e.swallow.background";
+                  offset: 50 4;
+                  to_x: "e.edge.bottom_right";
                   to_y: "e.text.description";
                }
                rel2 {
-                  relative: 1 1;
-                  offset: -5 24;
+                  offset: -50 -14;
                   to_y: "e.text.description";
                }
+               box { layout: "horizontal";
+                  padding: 0 0;
+                  align: 0.5 0.5;
+                  min: 0 1;
+              }
             }
          }
          part {
@@ -8953,7 +8954,7 @@ CONNMAN_ICON(ethernet)
                   relative: 1 1;
                   offset: 5 1;
                   to_x: "e.edge.bottom_right";
-                  to_y: "e.swallow.check";
+                  to_y: "e.box";
                }
                rel2 {
                   relative: 1 1;
@@ -8970,12 +8971,12 @@ CONNMAN_ICON(ethernet)
                state: "default" 0.0;
                rel1 {
                   relative: 1 0;
-                  offset: 5 4;
+                  offset: 35 4;
                   to_x: "e.swallow.background";
                }
                rel2 {
                   relative: 1 1;
-                  offset: -5 -45;
+                  offset: -35 -45;
                }
                text {
                   style: "dialog_style";
@@ -8988,6 +8989,7 @@ CONNMAN_ICON(ethernet)
             type: TEXT;
             effect: SOFT_SHADOW;
             mouse_events: 0;
+            scale;
             description {
                state: "default" 0.0;
                align: 0.5 0.5;
@@ -9007,7 +9009,6 @@ CONNMAN_ICON(ethernet)
                   font: "Sans:style=Bold";
                   size: 12;
                   align: 0.5 0.5;
-                  fit: 1 1;
                }
             }
          }

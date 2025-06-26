@@ -280,6 +280,10 @@ color_classes {
  */
 
 data.item: "gtk-theme" "B_and_W";
+data.item: "version" "125";
+efl_version: 1 25;
+
+
 collections {
 /* begin the collection of edje groups that are in this file */
 
@@ -294,17 +298,15 @@ group {
    name: "e/desktop/background";
    max: 1680 1050;
    parts {
-      part {
-	 name: "background_image";
-	 description {
-	    state: "default" 0.0;
-	    image {
-	       normal: "grill_dark_tiny_pattern.png";
-	    }
-	 }
+      part { name: "background_image";
+        description {
+           state: "default" 0.0;
+           image {
+             normal: "grill_dark_tiny_pattern.png";
+           }
+        }
       }
    }
-
 }    
 
 /////////////////////////////////////////////////////////////////////////////

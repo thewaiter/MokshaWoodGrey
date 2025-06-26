@@ -7043,7 +7043,7 @@ group {
                }
                image {
                   normal: "menu_sel_bg.png";
-                  border: 8 8 5 9;
+                  border: 12 12 12 12;
                }
             }
             description {
@@ -7083,7 +7083,7 @@ group {
                rel2.to: "bg";
                image {
                   normal: "menu_sel_fg.png";
-                  border: 8 8 5 9;
+                  border: 12 12 12 12;
                }
             }
             description {
